@@ -1,7 +1,7 @@
 {
-  "name": "react-sqljs-demo",
+  "name": "react-sqljs-samples",
   "version": "1.0.0",
-  "description": "sql.js + react example starter project",
+  "description": "Demo applications for reactive-sql-toolkit",
   "keywords": [
     "react",
     "starter"
