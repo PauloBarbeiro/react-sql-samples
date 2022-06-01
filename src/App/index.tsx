@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import "../styles.css";
 
 // Pages
@@ -21,7 +21,7 @@ export default function App(){
     const dbRefForConsole = useRef<Database | undefined>(undefined)
 
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Navigation />
             <main className={'main'}>
                 <div className={`appsContainer ${showConsole && 'consoleOpened'}`}>
@@ -36,6 +36,6 @@ export default function App(){
                     { showConsole ? ( <Console dbRef={dbRefForConsole}/> ) : null}
                 </div>
             </main>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
