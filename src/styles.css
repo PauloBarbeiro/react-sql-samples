@@ -11,13 +11,12 @@ textarea {
 }
 
 table {
-  border: 1px solid #1c6ea4;
-  background-color: #eeeeee;
+  border: 1px solid white;
+  background-color: #121;
   width: 40%;
   margin: 1.5em auto;
   text-align: left;
   border-collapse: collapse;
-  text-align: right;
 }
 
 thead {
@@ -33,4 +32,37 @@ td {
 
 .error {
   color: #922;
+}
+
+#root {
+  height: 100%
+}
+
+.main {
+  --navigationHeight: 53px;
+  --footerHeight: 50px;
+}
+
+.main{
+  display: block;
+  height: calc(100% - var(--navigationHeight));
+}
+
+.appsContainer {
+  height: calc(100% - var(--footerHeight));
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.consoleContainer {
+  padding: 5px;
+  background-color: black;
+  height: var(--footerHeight);
+  text-align: center;
+  color: white;
+  overflow-y: auto;
+}
+
+.consoleOpened {
+  height: 50%;
 }

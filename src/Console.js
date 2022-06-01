@@ -1,29 +1,24 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css";
-import initSqlJs from "sql.js";
 
-// Required to let webpack 4 know it needs to copy the wasm file to our assets
-import sqlWasm from "!!file-loader?name=sql-wasm-[contenthash].wasm!sql.js/dist/sql-wasm.wasm";
-
-export default function App() {
-  const [db, setDb] = useState(null);
+export default function Console({
+    dbRef
+}) {
   const [error, setError] = useState(null);
 
   useEffect(async () => {
-    // sql.js needs to fetch its wasm file, so we cannot immediately instantiate the database
-    // without any configuration, initSqlJs will fetch the wasm files directly from the same path as the js
-    // see ../craco.config.js
     try {
-      const SQL = await initSqlJs({ locateFile: () => sqlWasm });
-      setDb(new SQL.Database());
+        if(!dbRef.current) {
+            throw new Error('Db ref not set')
+        }
     } catch (err) {
       setError(err);
     }
   }, []);
 
   if (error) return <pre>{error.toString()}</pre>;
-  else if (!db) return <pre>Loading...</pre>;
-  else return <SQLRepl db={db} />;
+  else if (!dbRef.current) return <pre>Loading...</pre>;
+  else return <SQLRepl db={dbRef.current} />;
 }
 
 /**
@@ -49,7 +44,7 @@ function SQLRepl({ db }) {
 
   return (
     <div className="App">
-      <h1>React SQL interpreter</h1>
+      <h1>SQL interpreter</h1>
 
       <textarea
         onChange={(e) => exec(e.target.value)}

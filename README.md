@@ -1,13 +1,14 @@
-# demonstration of [react](https://reactjs.org/) + [sql.js](https://github.com/sql-js/sql.js)
+# Samples for Reactive-sql-toolkit library
 
-This is a template repository demonstrating the use of sql.js with create-react-app.
+In this project a simple example how to use reactive-sql-toolkit library.
 
-The only differences with a traditional create-react-app application are :
- - The usage of [craco](https://github.com/gsoft-inc/craco) to allow providing a custom [webpack](https://webpack.js.org/) configuration
- - a small custom webpack configuration in [`craco.config.js`](./craco.config.js) to copy the wasm module from sql.js to the distributed assets
+npm i
 
- Note that you should make sure your server serves `.wasm` files with the right mimetype, that is: `application/wasm`. Otherwise, you'll see the following error: `TypeError: Response has unsupported MIME type`
- 
- See [`src/App.js`](./src/App.js) for the code.
- 
- ### [view the live demo](https://react-sqljs-demo.ophir.dev/)
+npm run start
+
+Check the webpack.config.js file for details.
+
+
+### References 
+Start project: https://github.com/sql-js/react-sqljs-demo
+Base libraries: demonstration of [react](https://reactjs.org/) + [sql.js](https://github.com/sql-js/sql.js)
