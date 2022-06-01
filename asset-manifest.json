@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.4ff3524d.chunk.css",
-    "main.js": "/static/js/main.f637c52d.chunk.js",
-    "main.js.map": "/static/js/main.f637c52d.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.10ae0a35.js",
-    "runtime-main.js.map": "/static/js/runtime-main.10ae0a35.js.map",
-    "static/js/2.42f26b7a.chunk.js": "/static/js/2.42f26b7a.chunk.js",
-    "static/js/2.42f26b7a.chunk.js.map": "/static/js/2.42f26b7a.chunk.js.map",
-    "index.html": "/index.html",
-    "sql-wasm.wasm": "/sql-wasm-2b277767061e6a2529fe1f2e6fe80b4a.wasm",
-    "static/css/main.4ff3524d.chunk.css.map": "/static/css/main.4ff3524d.chunk.css.map",
-    "static/js/2.42f26b7a.chunk.js.LICENSE.txt": "/static/js/2.42f26b7a.chunk.js.LICENSE.txt"
+    "main.css": "/react-sql-samples/static/css/main.4ff3524d.chunk.css",
+    "main.js": "/react-sql-samples/static/js/main.f637c52d.chunk.js",
+    "main.js.map": "/react-sql-samples/static/js/main.f637c52d.chunk.js.map",
+    "runtime-main.js": "/react-sql-samples/static/js/runtime-main.04986d31.js",
+    "runtime-main.js.map": "/react-sql-samples/static/js/runtime-main.04986d31.js.map",
+    "static/js/2.42f26b7a.chunk.js": "/react-sql-samples/static/js/2.42f26b7a.chunk.js",
+    "static/js/2.42f26b7a.chunk.js.map": "/react-sql-samples/static/js/2.42f26b7a.chunk.js.map",
+    "index.html": "/react-sql-samples/index.html",
+    "sql-wasm.wasm": "/react-sql-samples/sql-wasm-2b277767061e6a2529fe1f2e6fe80b4a.wasm",
+    "static/css/main.4ff3524d.chunk.css.map": "/react-sql-samples/static/css/main.4ff3524d.chunk.css.map",
+    "static/js/2.42f26b7a.chunk.js.LICENSE.txt": "/react-sql-samples/static/js/2.42f26b7a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.10ae0a35.js",
+    "static/js/runtime-main.04986d31.js",
     "static/js/2.42f26b7a.chunk.js",
     "static/css/main.4ff3524d.chunk.css",
     "static/js/main.f637c52d.chunk.js"
