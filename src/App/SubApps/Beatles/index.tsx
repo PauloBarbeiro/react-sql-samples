@@ -1,15 +1,13 @@
 import React, { FC, useEffect, useState } from "react";
 import createSQL from "reactive-sql-toolkit";
+import BeatlesTable from "./Table";
 
 // Required to let webpack 4 know it needs to copy the wasm file to our assets
 // @ts-ignore
 import sqlWasm from "!!file-loader?name=sql-wasm-[contenthash].wasm!sql.js/dist/sql-wasm.wasm";
 
 // Types
-import { Database } from "sql.js";
-
-// Components
-import BeatlesTable from "./Table";
+import {Database} from "sql.js";
 
 interface Props {
     refForDebug: React.MutableRefObject<Database | undefined>
