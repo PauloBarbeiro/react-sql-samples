@@ -20,12 +20,14 @@ const Beatles: FC<Props> = ({ refForDebug}) => {
 
     useEffect(() => {
         const schema: any = {
-            beatles: {
-                fields: { id: "INTEGER", age: "INTEGER", name: "TEXT" },
-                values: [
-                    { id: 1, age: 20, name: "Ringo" },
-                    { id: 2, age: 18, name: "Paul" }
-                ]
+            tables: {
+                beatles: {
+                    fields: { id: "INTEGER", age: "INTEGER", name: "TEXT" },
+                    values: [
+                        { id: 1, age: 20, name: "Ringo" },
+                        { id: 2, age: 18, name: "Paul" }
+                    ]
+                }
             }
         };
 

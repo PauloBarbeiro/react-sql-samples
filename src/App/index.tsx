@@ -8,6 +8,7 @@ import Home from './Home'
 // SubApps
 import Beatles from "./SubApps/Beatles";
 import GameIndustry from "./SubApps/GameIndustry";
+import GDP from "./SubApps/GDP";
 
 // Navigation
 import Navigation from "../components/Navigation";
@@ -29,6 +30,7 @@ export default function App(){
                         <Route path="/" element={<Home />} />
                         <Route path="/beatles" element={<Beatles refForDebug={dbRefForConsole}/>} />
                         <Route path="/game-industry" element={<GameIndustry refForDebug={dbRefForConsole}/>} />
+                        <Route path="/gdp" element={<GDP refForDebug={dbRefForConsole}/>} />
                     </Routes>
                 </div>
                 <div className={`consoleContainer ${showConsole && 'consoleOpened'}`}>

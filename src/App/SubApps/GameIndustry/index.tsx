@@ -33,11 +33,13 @@ const GameIndustry: FC<Props> = ({ refForDebug}) => {
 
     useEffect(() => {
         const schema = {
-            ubisoft: {
-                fields: { ...marketTableStructure }
-            },
-            nintendo: {
-                fields: { ...marketTableStructure }
+            tables: {
+                ubisoft: {
+                    fields: { ...marketTableStructure }
+                },
+                nintendo: {
+                    fields: { ...marketTableStructure }
+                }
             }
         };
 

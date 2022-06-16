@@ -16,6 +16,10 @@ export default function MenuExampleBasic() {
             <Menu.Item as={Link} to={"/game-industry"}>
                 Game industry
             </Menu.Item>
+
+            <Menu.Item as={Link} to={"/gdp"}>
+                GDP per capita
+            </Menu.Item>
         </Menu>
     );
 }
