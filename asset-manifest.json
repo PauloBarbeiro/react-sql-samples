@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-sql-samples/static/css/main.c0a8fdef.chunk.css",
-    "main.js": "/react-sql-samples/static/js/main.e23611bb.chunk.js",
-    "main.js.map": "/react-sql-samples/static/js/main.e23611bb.chunk.js.map",
+    "main.js": "/react-sql-samples/static/js/main.3ff4df97.chunk.js",
+    "main.js.map": "/react-sql-samples/static/js/main.3ff4df97.chunk.js.map",
     "runtime-main.js": "/react-sql-samples/static/js/runtime-main.1b231d7e.js",
     "runtime-main.js.map": "/react-sql-samples/static/js/runtime-main.1b231d7e.js.map",
     "static/js/2.008e7f38.chunk.js": "/react-sql-samples/static/js/2.008e7f38.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.1b231d7e.js",
     "static/js/2.008e7f38.chunk.js",
     "static/css/main.c0a8fdef.chunk.css",
-    "static/js/main.e23611bb.chunk.js"
+    "static/js/main.3ff4df97.chunk.js"
   ]
 }
