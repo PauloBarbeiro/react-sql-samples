@@ -24,6 +24,7 @@ const Starter = () => {
                 Load the data of the related companies by clicking on the buttons
             </strong>
             <br />
+            <br />
             <button onClick={handleLoadNintendo}>Load Nintendo</button>&nbsp;
             <button onClick={handleLoadUbisoft}>Load Ubisoft</button>
         </div>

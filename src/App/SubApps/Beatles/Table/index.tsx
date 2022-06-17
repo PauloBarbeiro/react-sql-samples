@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Container, Header, Menu, Table } from "semantic-ui-react";
+import {Card, Container, Header, Menu, Table} from "semantic-ui-react";
 
 import { useQuery } from "reactive-sql-toolkit";
 
@@ -27,6 +27,30 @@ const BeatlesTable: FC<Props> = () => {
     return (
         <Container>
             <Header as={"h1"}>Add a beatle</Header>
+
+            <Card.Group>
+                <Card>
+                    <Card.Content>
+                        <Card.Header>Code Reference</Card.Header>
+                        <Card.Description>
+                            <a
+                                href={"https://github.com/PauloBarbeiro/react-sql-samples/blob/master/src/App/SubApps/Beatles/index.tsx"}
+                                target={"_blank"}
+                            >
+                                Check the sql setup here
+                            </a>
+                            <br/>
+                            <a
+                                href={"https://github.com/PauloBarbeiro/react-sql-samples/blob/master/src/App/SubApps/Beatles/Table/index.tsx"}
+                                target={"_blank"}
+                            >
+                                Check the SQL query hooks here
+                            </a>
+                        </Card.Description>
+                    </Card.Content>
+                </Card>
+            </Card.Group>
+
             <Table celled>
                 <Table.Header>
                     <Table.Row>

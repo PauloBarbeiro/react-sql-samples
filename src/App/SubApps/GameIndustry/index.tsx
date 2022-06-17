@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from "react";
-import { Grid, Divider, Container, Header } from "semantic-ui-react";
+import {Grid, Divider, Container, Header, Card} from "semantic-ui-react";
 import createSQL from "reactive-sql-toolkit";
 
 // Required to let webpack 4 know it needs to copy the wasm file to our assets
@@ -67,6 +67,37 @@ const GameIndustry: FC<Props> = ({ refForDebug}) => {
             <Grid divided={"vertically"}>
                 <Grid.Row>
                     <Header as={"h1"}>Game Industry from 2010 - 2022</Header>
+                </Grid.Row>
+                <Grid.Row>
+                    <Card.Group>
+                        <Card>
+                            <Card.Content>
+                                <Card.Header>Code Reference</Card.Header>
+                                <Card.Description>
+                                    <a
+                                        href={"https://github.com/PauloBarbeiro/react-sql-samples/blob/master/src/App/SubApps/GameIndustry/index.tsx"}
+                                        target={"_blank"}
+                                    >
+                                        Check the sql setup here
+                                    </a>
+                                    <br/>
+                                    <a
+                                        href={"https://github.com/PauloBarbeiro/react-sql-samples/blob/master/src/App/SubApps/GameIndustry/components/Ubisoft/index.tsx"}
+                                        target={"_blank"}
+                                    >
+                                        Check simple SELECT SQL reactive query hooks here
+                                    </a>
+                                    <br/>
+                                    <a
+                                        href={"https://github.com/PauloBarbeiro/react-sql-samples/blob/master/src/App/SubApps/GameIndustry/components/Comparison/index.tsx"}
+                                        target={"_blank"}
+                                    >
+                                        Check the SELECT with JOIN reactive query hooks here
+                                    </a>
+                                </Card.Description>
+                            </Card.Content>
+                        </Card>
+                    </Card.Group>
                 </Grid.Row>
                 <Grid.Row>
                     <DataLoader />

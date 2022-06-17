@@ -36,6 +36,29 @@ const GdpTable: FC<Props> = () => {
             <Card.Group>
                 <Card>
                     <Card.Content>
+                        <Card.Header>Code Reference</Card.Header>
+                        <Card.Description>
+                            <a
+                                href={"https://github.com/PauloBarbeiro/react-sql-samples/blob/master/src/App/SubApps/GDP/index.tsx"}
+                                target={"_blank"}
+                            >
+                                Check the setup with sql file loading and custom function.
+                            </a>
+                            <br/>
+                            <a
+                                href={"https://github.com/PauloBarbeiro/react-sql-samples/blob/master/src/App/SubApps/GDP/Table/index.tsx"}
+                                target={"_blank"}
+                            >
+                                Check the SELECT query with custom function here.
+                            </a>
+                        </Card.Description>
+                    </Card.Content>
+                </Card>
+            </Card.Group>
+
+            <Card.Group>
+                <Card>
+                    <Card.Content>
                         <Card.Header>Select base country</Card.Header>
                         <Card.Description>
                             <select
